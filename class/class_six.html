@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>VUEJS</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+       
+        <div id="app">
+              <h2>My name is {{name}}</h2>
+
+              <input type="text"  @keyup="NameChange">
+              <input type="text"  @keypress="NameChange">
+        </div>
+
+
+
+
+
+        <script>
+            var abc = new Vue({
+                el:'#app',
+                data:{
+                 name: 'hunter'
+                },
+                methods:{
+                   NameChange(e){
+                     // console.log(e.target.value)
+                     this.name = e.target.value
+                   }
+                }
+            })
+        </script>
+    </body>
+</html>

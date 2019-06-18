@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>VUEJS</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+       
+        <div id="app">
+            <h1>{{ name }}</h1>   
+
+            <button @click.alt="Messege">Click Me</button>
+            <button @click.shift="Messege">Click Me</button>
+            <a href="https://www.youtube.com/" @click.prevent>Youtube</a>
+        </div>
+
+
+
+
+
+        <script>
+            var abc = new Vue({
+                el:'#app',
+                data:{
+                    name: 'hello'
+                },
+                methods:{
+                    Messege(){
+                        console.log('learn hunter')
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>

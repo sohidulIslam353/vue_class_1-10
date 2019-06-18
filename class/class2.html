@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>VUEJS</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+       
+        <div id="app">
+            <h1>{{ MyName() }}</h1> 
+            <h1>{{ MyAge(24) }}</h1>   
+        </div>
+
+
+
+
+
+        <script>
+            var abc = new Vue({
+                el:'#app',
+                data:{
+                    name: 'hello',
+                    welcome: 'learn hunter'
+                },
+                methods:{
+                    MyName(){
+                        return 'learn hunter'
+                    },
+                    MyAge(age){
+                        return `${this.name} Learnhunter , my age is ${age}`
+                    },
+
+
+
+                }
+            })
+        </script>
+    </body>
+</html>

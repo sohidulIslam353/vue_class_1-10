@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>VUEJS</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+       
+        <div id="app">
+               <h1>I earn {{ dollar }} $ per month.</h1>
+               <button @dblclick="Amount(4)"> +1 </button>   
+               <button @dblclick="Amount(-4)"> -1 </button>
+
+
+        </div>
+
+
+
+
+
+        <script>
+            var abc = new Vue({
+                el:'#app',
+                data:{
+                    dollar: 20
+                   
+                },
+                methods:{
+                   Amount(taka){
+                    this.dollar += taka
+                   }
+                }
+            })
+        </script>
+    </body>
+</html>
